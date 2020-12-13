@@ -3,12 +3,14 @@ import numpy as np
 from rage.Building import Building
 
 
-
 class Werehouse (Building):
+
+    # Вывод даных
     def info_werehouse(self):
         print ("Данные по складу: ")
         return '\n'
 
+    # Вывод периметра и площади
     def size_werehouse(self):
         werehouse_1 = 1
         length = np.empty(werehouse_1)
@@ -29,10 +31,8 @@ class Werehouse (Building):
             print('Периметр:', length[i] * length[i])
 
         print('Общая площадь склада: ' + str(np.dot(length, width)))
-
         name = {1: 'Есин Максим Генрихович', 2: 'Ешков Жмых Алексеевич', 3: 'Жмышенко Валерий Альбертович'}
-        print('Рабочие склада: ')
         for i in name:
             print(name[i])
 
-        return '\n'
+        return '/n'
